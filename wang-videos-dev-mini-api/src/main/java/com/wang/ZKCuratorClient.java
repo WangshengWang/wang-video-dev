@@ -21,6 +21,7 @@ import org.springframework.stereotype.Component;
 
 import com.wang.cofig.ResourceConfig;
 import com.wang.enums.BGMOperatorTypeEnum;
+import com.wang.service.BgmService;
 import com.wang.utils.JsonUtils;
 
 @Component
