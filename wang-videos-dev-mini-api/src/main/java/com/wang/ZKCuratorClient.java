@@ -31,8 +31,8 @@ public class ZKCuratorClient {
 	private CuratorFramework client = null;	
 	final static Logger log = LoggerFactory.getLogger(ZKCuratorClient.class);
 
-//	@Autowired
-//	private BgmService bgmService;
+	@Autowired
+	private BgmService bgmService;
 	
 //	public static final String ZOOKEEPER_SERVER = "192.168.0.114:2181";
 	
