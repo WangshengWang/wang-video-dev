@@ -31,8 +31,8 @@ public class ZKCuratorClient {
 	private CuratorFramework client = null;	
 	final static Logger log = LoggerFactory.getLogger(ZKCuratorClient.class);
 
-	@Autowired
-	private BgmService bgmService;
+//	@Autowired
+//	private BgmService bgmService;
 	
 //	public static final String ZOOKEEPER_SERVER = "192.168.0.114:2181";
 	
@@ -95,8 +95,8 @@ public class ZKCuratorClient {
 //					String songPath = bgm.getPath();
 					
 					// 2. 定义保存到本地的bgm路径
-					String filePath = "D:\\毕业设计\\users-file" + songPath;
-//					String filePath = resourceConfig.getFileSpace() + songPath;
+//					String filePath = "D:\\毕业设计\\users-file" + songPath;
+					String filePath = resourceConfig.getFileSpace() + songPath;
 					
 					// 3. 定义下载的路径（播放url）
 					String arrPath[] = songPath.split("\\\\");

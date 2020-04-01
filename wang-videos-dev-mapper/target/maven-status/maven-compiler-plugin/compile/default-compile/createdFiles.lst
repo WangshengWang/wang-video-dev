@@ -1,0 +1,10 @@
+com\wang\mapper\CommentsMapper.class
+com\wang\mapper\SearchRecordsMapper.class
+com\wang\mapper\VideosMapper.class
+com\wang\mapper\CommentsMapperCustom.class
+com\wang\mapper\VideosMapperCustom.class
+com\wang\mapper\UsersLikeVideosMapper.class
+com\wang\mapper\BgmMapper.class
+com\wang\mapper\UsersFansMapper.class
+com\wang\mapper\UsersMapper.class
+com\wang\mapper\UsersReportMapper.class

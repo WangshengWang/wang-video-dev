@@ -1,0 +1,14 @@
+com\wang\controller\BgmController.class
+com\wang\controller\RegistLoginController.class
+com\wang\controller\UserController.class
+com\wang\ZKCuratorClient.class
+com\wang\ZKCuratorClient$1.class
+com\wang\Application.class
+com\wang\controller\HelloWorldController.class
+com\wang\controller\BasicController.class
+com\wang\cofig\ResourceConfig.class
+com\wang\controller\interceptor\MiniInterceptor.class
+com\wang\WebMvcConfig.class
+com\wang\controller\VideoController.class
+com\wang\WarStartApplication.class
+com\wang\Swagger2.class
