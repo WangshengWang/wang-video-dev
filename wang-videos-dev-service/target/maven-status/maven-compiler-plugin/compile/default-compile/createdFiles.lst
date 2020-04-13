@@ -1,0 +1,6 @@
+com\wang\service\impl\VideoServiceImpl.class
+com\wang\service\impl\BgmServiceImpl.class
+com\wang\service\impl\UserServiceImpl.class
+com\wang\service\VideoService.class
+com\wang\service\BgmService.class
+com\wang\service\UserService.class
