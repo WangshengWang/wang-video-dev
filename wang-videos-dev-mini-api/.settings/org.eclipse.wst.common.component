@@ -5,6 +5,15 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/.apt_generated"/>
+        <dependent-module archiveName="wang-videos-dev-service-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/wang-videos-dev-service/wang-videos-dev-service">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wang-videos-dev-mapper-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/wang-videos-dev-mapper/wang-videos-dev-mapper">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wang-videos-dev-pojo-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/wang-videos-dev-pojo/wang-videos-dev-pojo">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <dependent-module archiveName="wang-videos-dev-common-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/wang-videos-dev-common/wang-videos-dev-common">
             <dependency-type>uses</dependency-type>
         </dependent-module>

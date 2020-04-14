@@ -6,7 +6,7 @@ import org.springframework.context.annotation.PropertySource;
 
 @Configuration
 @ConfigurationProperties(prefix="com.wang")
-@PropertySource("classpath:resource-prod.properties")
+@PropertySource("classpath:resource.properties")
 public class ResourceConfig {
 
 	private String zookeeperServer;

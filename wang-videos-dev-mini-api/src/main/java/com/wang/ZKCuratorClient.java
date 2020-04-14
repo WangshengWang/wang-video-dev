@@ -21,7 +21,6 @@ import org.springframework.stereotype.Component;
 
 import com.wang.cofig.ResourceConfig;
 import com.wang.enums.BGMOperatorTypeEnum;
-import com.wang.service.BgmService;
 import com.wang.utils.JsonUtils;
 
 @Component
@@ -31,11 +30,6 @@ public class ZKCuratorClient {
 	private CuratorFramework client = null;	
 	final static Logger log = LoggerFactory.getLogger(ZKCuratorClient.class);
 
-//	@Autowired
-//	private BgmService bgmService;
-	
-//	public static final String ZOOKEEPER_SERVER = "192.168.0.114:2181";
-	
 	@Autowired
 	private ResourceConfig resourceConfig;
 	
@@ -83,19 +77,8 @@ public class ZKCuratorClient {
 					String operatorType = map.get("operType");
 					String songPath = map.get("path");
 					
-//					String arr[] = path.split("/");
-//					String bgmId = arr[arr.length - 1];
-					
-//					Bgm bgm = bgmService.queryBgmById(bgmId);
-//					if (bgm == null) {
-//						return;
-//					}
-					
-					// 1.1 bgm所在的相对路径
-//					String songPath = bgm.getPath();
 					
 					// 2. 定义保存到本地的bgm路径
-//					String filePath = "D:\\毕业设计\\users-file" + songPath;
 					String filePath = resourceConfig.getFileSpace() + songPath;
 					
 					// 3. 定义下载的路径（播放url）

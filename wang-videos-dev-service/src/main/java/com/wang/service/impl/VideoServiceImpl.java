@@ -80,7 +80,8 @@ public class VideoServiceImpl implements VideoService {
 	}
 
 	@Transactional(propagation = Propagation.REQUIRED)
-	public PagedResult getAllVideos(Videos video, Integer isSaveRecord,Integer page, Integer pageSize) {
+	public PagedResult getAllVideos(Videos video, Integer isSaveRecord,
+			Integer page, Integer pageSize) {
 		
 		// 保存热搜词
 		String desc = video.getVideoDesc();
@@ -94,7 +95,7 @@ public class VideoServiceImpl implements VideoService {
 		}
 		
 		PageHelper.startPage(page, pageSize);
-		List<VideosVO> list = videosMapperCustom.queryAllVideos(desc);
+		List<VideosVO> list = videosMapperCustom.queryAllVideos(desc, userId);
 		
 		PageInfo<VideosVO> pageList = new PageInfo<>(list);
 		

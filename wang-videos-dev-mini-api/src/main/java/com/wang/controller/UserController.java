@@ -46,7 +46,8 @@ public class UserController extends BasicController {
 		}
 		
 		// 文件保存的命名空间
-		String fileSpace = "D:/毕业设计/users-file";
+		//FILE_SPACE
+		//String FILE_SPACE = "D:/毕业设计/users-file";
 		// 保存到数据库中的相对路径
 		String uploadPathDB = "/" + userId + "/face";
 		
@@ -58,7 +59,7 @@ public class UserController extends BasicController {
 				String fileName = files[0].getOriginalFilename();
 				if (StringUtils.isNotBlank(fileName)) {
 					// 文件上传的最终保存路径
-					String finalFacePath = fileSpace + uploadPathDB + "/" + fileName;
+					String finalFacePath = FILE_SPACE + uploadPathDB + "/" + fileName;
 					// 设置数据库保存的路径
 					uploadPathDB += ("/" + fileName);
 					
